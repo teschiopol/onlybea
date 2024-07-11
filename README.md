@@ -1,4 +1,4 @@
-# Vue 3 + TypeScript + Vite + PrimeVue 3 + PrimeFlex(Tailwind)
+# Onlybea 👩🏻‍💻
 
 ## Requirements
 
@@ -41,15 +41,3 @@ npm run preview
 - [Tailwind](https://tailwindcss.com/)
 
 - [Prime Blocks](https://blocks.primevue.org/)
-
-## Script to replicate
-
-```bash
-npm create vite@latest vue-boilerplate -- --template vue-ts
-```
-
-```bash
-npm install primevue
-npm install primeicons
-npm install primeflex
-```
