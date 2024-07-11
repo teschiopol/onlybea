@@ -1,5 +1,6 @@
 import {ref} from "vue";
 import axios from "axios";
+import {ElementType} from "../types.ts";
 
 const triggerLead = ref(false);
 
@@ -21,7 +22,7 @@ function randomNumber()
 export async function getPosts()
 {
     let users = await getUsers();
-    let res = [];
+    let res : ElementType[] = [];
     users.forEach(el => {
         res.push({
             username: el.username,
@@ -32,7 +33,7 @@ export async function getPosts()
 }
 
 async function getUsers() {
-    let res = [];
+    let res : any[] = [];
     await axios('https://jsonplaceholder.typicode.com/users')
         .then(function (response) {
             res = response.data;
@@ -40,7 +41,7 @@ async function getUsers() {
     return res;
 }
 
-export async function signInWithEmail(email)
+export async function signInWithEmail(email : string)
 {
     let users = await getUsers();
     return users.some(el => el.email === email);

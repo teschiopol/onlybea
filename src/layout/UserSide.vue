@@ -18,7 +18,7 @@ const items = ref([
   } },
 ]);
 
-const signIn = async (email) => {
+const signIn = async (email : string) => {
   if (await signInWithEmail(email)) {
     logged.value = true;
   } else {

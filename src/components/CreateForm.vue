@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
 import { useToast } from "primevue/usetoast";
-import {setTrigger} from "../services/service.ts";
 
 const toast = useToast();
 
@@ -19,7 +18,6 @@ const post = () => {
     title.value = '';
     error.value = false;
     toast.add({ severity: 'success', summary: 'Save', detail: 'Success!', life: 3000 });
-    setTrigger();
   }
 }
 </script>

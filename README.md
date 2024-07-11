@@ -10,6 +10,8 @@ npm i
 
 ## Usage
 
+Email test: Sincere@april.biz
+
 For development
 
 ```bash

@@ -2,7 +2,9 @@
 import {onMounted, ref} from "vue";
 import {getPosts} from "../services/service.ts";
 import PlaceHolder from "../components/PlaceHolder.vue";
-const elements = ref([]);
+import {ElementType} from "../types.ts";
+
+const elements = ref<ElementType[]>([]);
 
 onMounted(async () => {
   elements.value = await getPosts();

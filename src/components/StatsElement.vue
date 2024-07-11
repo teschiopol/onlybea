@@ -1,13 +1,9 @@
 <script setup lang="ts">
-
-type ElementType = {
-  username: string,
-  posts: number
-}
+import {ElementType} from "../types.ts";
 
 defineProps<{idx: number, element: ElementType}>()
 
-const position = (id) => {
+const position = (id: number) => {
   switch (id) {
     case 0:
       return 'first';
