@@ -13,7 +13,7 @@ const signIn = () => {
 <template>
   <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
     <div class="text-center mb-5">
-      <img src="../assets/vue.svg" alt="Image"  style="height:50px" class="mb-3" />
+      <i style="font-size:50px" class="pi pi-briefcase mb-3 text-primary"></i>
       <div class="text-900 text-2xl font-medium mb-3">Get Your Job!</div>
     </div>
 

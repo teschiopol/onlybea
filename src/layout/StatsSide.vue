@@ -14,8 +14,8 @@ onMounted(async () => {
 
 <template>
   <div >
-    <p class="text-900 text-2xl text-center text-primary font-bold">Best Employee Advisor</p>
-      <PlaceHolder/>
+    <p class="text-900 text-2xl text-center text-primary font-semibold">Best Employee Advisor</p>
+    <PlaceHolder/>
   </div>
 </template>
 

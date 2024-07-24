@@ -1,36 +1,14 @@
 <script setup lang="ts">
-
+  import SingleCard from './SingleCard.vue';
 </script>
 
 <template>
   <div >
     <div class="grid">
-      <div class="col-12 md:col-6 ">
-        <div class="surface-card shadow-2 p-3 border-round">
-          <div class="flex justify-content-between mb-3">
-            <div>
-              <span class="block text-500 font-medium mb-3">Total Sent</span>
-              <div class="text-900 font-medium text-xl">152</div>
-            </div>
-            <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width:2.5rem;height:2.5rem">
-              <i class="pi pi-folder-open text-blue-500 text-xl"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 md:col-6 ">
-        <div class="surface-card shadow-2 p-3 border-round">
-          <div class="flex justify-content-between mb-3">
-            <div>
-              <span class="block text-500 font-medium mb-3">Fast Reject</span>
-              <div class="text-900 font-medium text-xl">3</div>
-            </div>
-            <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width:2.5rem;height:2.5rem">
-              <i class="pi pi-file text-orange-500 text-xl"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <SingleCard title="Total" :counter="142" icon-color="blue" icon="pi-folder-open" />
+      <SingleCard title="Sent" :counter="54" icon-color="purple" icon="pi-file-arrow-up" />
+      <SingleCard title="Ignored" :counter="19" icon-color="orange" icon="pi-ban" />
+      <SingleCard title="Reject" :counter="3" icon-color="red" icon="pi-times" />
     </div>
   </div>
 </template>

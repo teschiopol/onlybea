@@ -12,6 +12,7 @@ import Toast from "primevue/toast";
 import Textarea from 'primevue/textarea';
 import InlineMessage from "primevue/inlinemessage";
 import ToastService from 'primevue/toastservice';
+import Dropdown from 'primevue/dropdown';
 
 import './style.css'
 import 'primevue/resources/themes/lara-light-cyan/theme.css'
@@ -31,5 +32,6 @@ app.component('PrimeTabMenu', TabMenu);
 app.component('PrimeToast', Toast);
 app.component('PrimeTextarea', Textarea);
 app.component('PrimeInlineMessage', InlineMessage);
+app.component('PrimeDropdown', Dropdown);
 
 app.mount('#app')
