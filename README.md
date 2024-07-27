@@ -10,7 +10,7 @@ npm i
 
 ## Usage
 
-Email test: Sincere@april.biz
+Email test: <Sincere@april.biz>
 
 For development
 
@@ -19,6 +19,7 @@ npm run dev
 ```
 
 For production
+
 ```bash
 npm run build
 npm run preview
@@ -33,10 +34,10 @@ npm run preview
 - [Vite](https://vitejs.dev/)
 
 - [PrimeVue](https://v3.primevue.org/)
-	
-	- [Themes](https://v3.primevue.org/theming/)
 
-	- [Icons](https://v3.primevue.org/icons/)
+  - [Themes](https://v3.primevue.org/theming/)
+
+  - [Icons](https://v3.primevue.org/icons/)
 
 - [PrimeFlex](https://primeflex.org/)
 

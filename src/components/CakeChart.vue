@@ -11,12 +11,11 @@ const chartOptions = ref();
 
 const setChartData = () => {
   return {
-    labels: ['No Response', 'First Step', 'Reject'],
+    labels: ['Ignored', 'Reject', 'Sent'],
     datasets: [
       {
-        data: [12, 34, 164],
-        backgroundColor: ['rgba(249, 115, 22)', 'rgba(6, 182, 212)', 'rgb(210,73,169)'],
-        borderColor: ['rgb(249, 115, 22)', 'rgb(6, 182, 212)', 'rgb(210,73,169)'],
+        data: [19, 3, 54],
+        backgroundColor: ['rgba(249, 115, 22)', 'rgba(230, 80, 150)', 'rgb(210,73,169)']
       }
     ]
   };
@@ -26,8 +25,10 @@ const setChartOptions = () => {
   const textColor = documentStyle.getPropertyValue('--text-color');
 
   return {
+    responsive: true,
     plugins: {
       legend: {
+        position: 'bottom',
         labels: {
           usePointStyle: true,
           color: textColor
@@ -40,6 +41,6 @@ const setChartOptions = () => {
 
 <template>
   <div class="card flex justify-content-center">
-    <PrimeChart type="pie" :data="chartData" :options="chartOptions" class="py-4"/>
+    <PrimeChart type="doughnut" :data="chartData" :options="chartOptions" class="py-4"/>
   </div>
 </template>
